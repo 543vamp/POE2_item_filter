@@ -44,33 +44,44 @@ BaseType "Uncut Support Gem"
 # スピリットジェムの無効化
 # 指定レベル以下を表示しない
 #Hide
-#ItemLevel <= 16
+#ItemLevel <= 10
 #BaseType "Uncut Spirit Gem" 
 
-# ソケット1以上を表示
-#Show
-#Sockets > 0
-
-# 不必要なアイテムを表示しない
-# マジック以下
-# 高さ2以上
-# ソケット1以下
-Hide
-Rarity <= Magic
-Height >= 2
-
-
-# 不必要なアイテムを表示しない
-# レア以下
-# 高さ2以上
-# ソケット1以下
-#Hide
-#Rarity <= Rare
-#Height >= 2
-
-# 叡智の巻物  変成 増強 非表示
+# 叡智の巻物 変成 増強 非表示
 Hide
 BaseType "Scroll of Wisdom" "Orb of Transmutation" "Orb of Augmentation"
+
+# 特級表示(レア)
+Show
+BaseType "Expert"
+Rarity Rare
+SetFontSize 40
+SetTextColor 233 206 75
+SetBorderColor 233 206 75
+PlayEffect Yellow
+MinimapIcon 1 Yellow Diamond
+
+# 特級表示(マジック)
+Show
+BaseType "Expert"
+Rarity Magic
+SetFontSize 40
+SetTextColor 0 191 255
+SetBorderColor 0 0 255
+SetBackgroundColor 76 51 12
+PlayEffect Blue
+MinimapIcon 1 Blue Diamond
+
+# 特級表示(ノーマル)
+Show
+BaseType "Expert"
+Rarity Normal
+SetFontSize 40
+SetTextColor 255 255 255
+SetBorderColor 255 207 92
+SetBackgroundColor 0 0 0
+PlayEffect White
+MinimapIcon 1 White Diamond
 
 #-------------------------------------------------------------------------------------------------
 #-------------------------------------------------------------------------------------------------
@@ -250,7 +261,12 @@ SetFontSize 45
 #Hide
 #Class "belt"
 #ItemLevel <= 81
+#Rarity <= Magic
+
+# 不必要なアイテムを表示しない
+# レアorマジック以下
+Hide
+Rarity <= Magic
 #Rarity <= Rare
-
-
-
+Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Quiver" "Mace" "Staff" "Quarter" "Bow" "Crossbow" "Wand" "Sceptre" "Focus"
+#AreaLevel >= 70
