@@ -62,26 +62,26 @@ PlayEffect Yellow
 MinimapIcon 1 Yellow Diamond
 
 # 特級表示(マジック)
-Show
-BaseType "Expert"
-Rarity Magic
-SetFontSize 40
-SetTextColor 0 191 255
-SetBorderColor 0 0 255
-SetBackgroundColor 76 51 12
-PlayEffect Blue
-MinimapIcon 1 Blue Diamond
+#Show
+#BaseType "Expert"
+#Rarity Magic
+#SetFontSize 40
+#SetTextColor 0 191 255
+#SetBorderColor 0 0 255
+#SetBackgroundColor 76 51 12
+#PlayEffect Blue
+#MinimapIcon 1 Blue Diamond
 
 # 特級表示(ノーマル)
-Show
-BaseType "Expert"
-Rarity Normal
-SetFontSize 40
-SetTextColor 255 255 255
-SetBorderColor 255 207 92
-SetBackgroundColor 0 0 0
-PlayEffect White
-MinimapIcon 1 White Diamond
+#Show
+#BaseType "Expert"
+#Rarity Normal
+#SetFontSize 40
+#SetTextColor 255 255 255
+#SetBorderColor 255 207 92
+#SetBackgroundColor 0 0 0
+#PlayEffect White
+#MinimapIcon 1 White Diamond
 
 #-------------------------------------------------------------------------------------------------
 #-------------------------------------------------------------------------------------------------
