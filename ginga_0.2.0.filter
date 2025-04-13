@@ -1,0 +1,289 @@
+
+# 強調表示
+
+# 究極フラスコ表示
+Show
+Quality = 0
+Class "Flasks"
+BaseType "Ultimate"
+SetTextColor 255 0 255
+SetBorderColor 255 207 92
+SetBackgroundColor 0 0 0
+PlayEffect Purple
+MinimapIcon 1 Purple Circle
+SetFontSize 45
+
+#-------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------
+#カスタマイズ設定
+
+#非表示設定
+# ウェイストーン
+# 指定レベル以下を表示しない
+#Hide  
+#WaystoneTier <= 13
+#Class "Waystones"
+
+# チャーム無効化
+#Hide
+#BaseType "Charm"
+
+# スキルジェムの無効化
+# 指定レベル以下を表示しない
+#Hide
+#ItemLevel <= 19
+#BaseType "Uncut Skill Gem"
+
+# サポートジェムの無効化
+# 指定レベル以下を表示しない
+#Hide
+#ItemLevel <= 2
+#BaseType "Uncut Support Gem"
+
+# スピリットジェムの無効化
+# 指定レベル以下を表示しない
+#Hide
+#ItemLevel <= 18
+#BaseType "Uncut Spirit Gem" 
+
+
+
+# 叡智の巻物  変成 増強 非表示
+#Hide
+#BaseType "Scroll of Wisdom" "Orb of Transmutation" "Orb of Augmentation"
+
+# 特級表示(レア)
+#Show
+#BaseType "Expert"
+#Rarity Rare
+#SetFontSize 40
+#SetTextColor 233 206 75
+#SetBorderColor 233 206 75
+#PlayEffect Yellow
+#MinimapIcon 1 Yellow Diamond
+
+# 特級表示(マジック)
+#Show
+#BaseType "Expert"
+#Rarity Magic
+#SetFontSize 40
+#SetTextColor 0 191 255
+#SetBorderColor 0 0 255
+#SetBackgroundColor 76 51 12
+#PlayEffect Blue
+#MinimapIcon 1 Blue Diamond
+
+# 特級表示(ノーマル)
+#Show
+#BaseType "Expert"
+#Rarity Normal
+#SetFontSize 40
+#SetTextColor 255 255 255
+#SetBorderColor 255 207 92
+#SetBackgroundColor 0 0 0
+#PlayEffect White
+#MinimapIcon 1 White Diamond
+
+#-------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------
+
+# ユニークを表示
+Show
+Rarity = Unique
+
+# 神 カサンドラの鏡
+# 赤
+Show
+Class "Currency"
+BaseType "Divine Orb" "Mirror of Kalandra" "Perfect Jeweller"
+SetTextColor 255 120 120
+SetBorderColor 255 207 92
+SetBackgroundColor 0 0 0
+CustomAlertSound "POE2_SE/zebflash.mp3" 300
+PlayEffect RED
+MinimapIcon 1 Red Circle
+SetFontSize 45
+
+# 星のアミュレット 重いベルト サファイアの指輪
+# 赤
+Show
+BaseType "Stellar Amulet" "Heavy Belt" "Sapphire Ring"
+Rarity = Normal
+SetTextColor 255 120 120
+SetBorderColor 255 207 92
+SetBackgroundColor 0 0 0
+CustomAlertSound "POE2_SE/pokyun.mp3" 300
+PlayEffect RED
+MinimapIcon 1 Red Circle
+SetFontSize 45
+
+# 星のアミュレット 重いベルト サファイアの指輪
+# 赤
+Show
+BaseType "Stellar Amulet" "Heavy Belt" "Sapphire Ring"
+Rarity = Unique
+SetTextColor 255 120 120
+SetBorderColor 255 207 92
+SetBackgroundColor 0 0 0
+CustomAlertSound "POE2_SE/pokyun.mp3" 300
+PlayEffect RED
+MinimapIcon 1 Red Circle
+SetFontSize 45
+
+# 消去 混沌 可能性
+# 赤
+Show
+Class "Currency"
+BaseType "Orb of Annulment" "Chaos Orb" "Orb of Chance" "Greater Jeweller"
+SetTextColor 255 120 120
+SetBorderColor 255 207 92
+SetBackgroundColor 0 0 0
+CustomAlertSound "POE2_SE/SG_short.mp3" 75
+PlayEffect RED
+MinimapIcon 1 Red Circle
+SetFontSize 45
+
+# ピナクルキー(断片)
+# 赤
+Show
+Class "Pinnacle keys"
+SetTextColor 255 120 120
+SetBorderColor 255 207 92
+SetBackgroundColor 0 0 0
+PlayEffect RED
+MinimapIcon 1 Red Circle
+SetFontSize 45
+
+# スキルジェム(lv.20)
+Show
+BaseType "Uncut Skill Gem"
+ItemLevel = 20
+SetTextColor 255 120 120
+SetBorderColor 255 207 92
+SetBackgroundColor 0 0 0
+PlayEffect RED
+MinimapIcon 1 Red Circle
+SetFontSize 45
+
+# スピリットジェム(lv.19.20)
+# 赤
+Show
+BaseType "Uncut Spirit Gem"
+ItemLevel >= 19
+SetTextColor 255 120 120
+SetBorderColor 255 207 92
+SetBackgroundColor 0 0 0
+PlayEffect RED
+MinimapIcon 1 Red Circle
+SetFontSize 45
+
+# 高貴
+# 黄色
+Show
+Class "Currency"
+BaseType "Exalted Orb"
+SetTextColor 255 207 92
+SetBorderColor 255 207 92
+SetBackgroundColor 76 51 12
+CustomAlertSound "POE2_SE/kyuin.mp3" 300
+PlayEffect Yellow
+MinimapIcon 1 Yellow Circle
+SetFontSize 45
+
+# 感情 カタリスト エッセンス ソウルコア アーティファクト ログブック 異国のコイン  錬金 ヴァール 王者
+# 緑
+Show
+BaseType "Distilled" "Catalyst" "ESSENCE" "SOUL CORE" "ARTIFACT" "Logbook" "Exotic Coinage"  "Orb of Alchemy" "Vaal Orb" "Regal Orb"
+SetTextColor 0 255 0
+SetBorderColor 255 207 92
+SetBackgroundColor 0 0 0
+PlayEffect Green
+MinimapIcon 1 Green Circle
+SetFontSize 45
+
+# 宝石 
+# 緑
+Show
+Class "Jewel" 
+SetTextColor 0 255 0
+SetBorderColor 255 207 92
+SetBackgroundColor 0 0 0
+CustomAlertSound "POE2_SE/gomadare.mp3" 300
+PlayEffect Green
+MinimapIcon 1 Green Circle
+SetFontSize 45
+
+# ブリーチの指輪 
+# 緑
+Show
+BaseType "Breach Ring" 
+SetTextColor 0 255 0
+SetBorderColor 255 207 92
+SetBackgroundColor 0 0 0
+CustomAlertSound "POE2_SE/gomadare.mp3" 300
+PlayEffect Green
+MinimapIcon 1 Green Circle
+SetFontSize 45
+
+# 品質上昇 欠片 下級 ルーン
+# 青
+Show
+BaseType "Artificer's Orb" "Blacksmith's Whetstone" "Arcanist's Etcher" "Armourer's Scrap" "Gemcutter's Prism" "Glassblower's Bauble" "Jeweller's Orb" "Shard" "Lesser Jeweller's Orb" "Rune"
+SetTextColor 0 191 255
+SetBorderColor 0 0 255
+SetBackgroundColor 76 51 12
+PlayEffect Blue
+MinimapIcon 1 Blue Circle
+SetFontSize 45
+
+# 変成 増強
+# 青
+Show
+BaseType "Orb of Transmutation" "Orb of Augmentation"
+SetTextColor 0 191 255
+SetBorderColor 0 0 255
+SetBackgroundColor 76 51 12
+PlayEffect Blue
+MinimapIcon 1 Blue Circle
+SetFontSize 45
+
+# ウェイストーン 試練 石板 ブリーチの欠片 鍵 シミュラクラムの破片 叡智の巻物 スキルジェム　スピリットジェム
+Show
+BaseType "Waystone" "DJINN BARYA" "INSCRIBED ULTIMATUM" "TABLET" "Breach" "key" "Simulacrum Splinter" "Scroll of Wisdom" "Uncut Skill Gem"  "Uncut Spirit Gem" "Uncut Support Gem"
+SetTextColor 255 255 255
+SetBorderColor 255 207 92
+SetBackgroundColor 0 0 0
+PlayEffect WHITE
+MinimapIcon 1 White Circle
+SetFontSize 45
+
+# 特級表示
+#Show
+#BaseType "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff"
+#Rarity Rare
+#SetFontSize 40
+#SetTextColor 233 206 75
+#SetBorderColor 233 206 75
+#PlayEffect Yellow
+#MinimapIcon 1 Yellow Diamond
+
+# ベルト 非表示
+#Hide
+#Class "belt"
+#ItemLevel <= 81
+#Rarity <= Magic
+
+# 不必要なアイテムを表示しない
+# レア以下
+# 高さ2以上
+#Hide
+#Rarity <= Magic
+#Rarity <= Rare
+#Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Quiver" "Mace" "Staff" "Quarter" "Bow" "Crossbow" "Wand" "Sceptre" "Focus" "Flask"
+#AreaLevel >= 70
+
+
+
+
