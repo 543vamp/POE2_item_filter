@@ -242,9 +242,5 @@ Rarity <= Normal
 #Rarity <= Magic
 # レア以下
 #Rarity <= Rare
-Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Quiver" "Mace" "Staff" "Quarter" "Bow" "Crossbow" "Wand" "Sceptre" "Focus" "Flask" "Spear"
+Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Quiver" "Mace" "Staff" "Quarter" "Bow" "Crossbow" "Wand" "Sceptre" "Focus" "Flask" "Spear" "Quarterstaff"
 AreaLevel >= 70
-
-
-
-
